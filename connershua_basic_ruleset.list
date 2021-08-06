@@ -1,0 +1,8 @@
+GlobalMedia,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/GlobalMedia.list
+HKMTMedia,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/HKMTMedia.list
+Proxies,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Global.list
+Proxies,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Apple.list
+Proxies,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/AppleNews.list
+DIRECT,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/China.list
+DIRECT,[]GEOIP,CN
+Final,[]FINAL,,dns-failed

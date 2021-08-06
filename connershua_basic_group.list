@@ -1,0 +1,6 @@
+Final`select`[]Proxies`[]DIRECT
+Proxies`select`[]Auto`.*
+GlobalMedia`select`[]Proxies`.*
+HKMTMedia`select`[]DIRECT`.*
+Apple`select`[]DIRECT`[]Proxies`
+Auto`url-test`.*`http://bing.com/`300

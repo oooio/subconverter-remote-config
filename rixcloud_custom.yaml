@@ -1,0 +1,26 @@
+custom:
+  enable_rule_generator: true
+  overwrite_original_rules: true
+  
+  proxy_groups:
+  - {name: Proxies, type: select, rule: [".*"]}
+  - {name: "Apple Services", type: select, rule: ["[]Proxies", "[]DIRECT", ".*"]}
+  - {name: "AD Block", type: select, rule: ["[]REJECT", "[]DIRECT"]}
+  - {name: "Stream Services", type: select, rule: ["[]Proxies", ".*"]}
+  - {name: "Netease Music", type: select, rule: ["[]DIRECT", "Netease"]}
+  - {name: Domestic, type: select, rule: ["[]DIRECT", ".*"]}
+
+  rulesets:
+  - {ruleset: "https://ruleset.dev/surge3_reject", group: "AD Block"}
+  - {ruleset: "https://ruleset.dev/surge3_reject-tinygif", group: "AD Block"}
+  
+  - {ruleset: "https://ruleset.dev/surge3_netease_music", group: "Netease Music"}
+  - {ruleset: "https://ruleset.dev/surge3_stream_services", group: "Stream Services"}
+  - {ruleset: "https://ruleset.dev/surge3_global_plus", group: Proxies}
+  - {ruleset: "https://ruleset.dev/surge3_global", group: Proxies}
+  - {ruleset: "https://ruleset.dev/surge3_apple_services", group: "Apple Services"}
+  - {ruleset: "https://ruleset.dev/surge3_domestic", group: Domestic}
+  - {rule: "GEOIP,CN", group: Domestic}
+  - {rule: "FINAL,,dns-failed", group: Proxies}
+  
+  surge_rule_base: "https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652dbd40c5d2715b/raw/rixcloud_surge_base.conf"

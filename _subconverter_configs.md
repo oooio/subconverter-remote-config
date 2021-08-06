@@ -1,0 +1,1 @@
+This is a gist repository for some external configs for [subconverter](https://github.com/tindy2013/subconverter), you can use the raw address of the following INIs to generate a specified set of rules, groups and/or scripts. 
